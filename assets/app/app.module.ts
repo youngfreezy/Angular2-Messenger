@@ -9,6 +9,7 @@ import { AuthenticationComponent } from "./auth/authentication.component";
 import { LogoutComponent } from "./auth/logout.component";
 import { SignupComponent } from "./auth/signup.component";
 import { SigninComponent } from "./auth/signin.component";
+import { ErrorComponent } from "./errors/error.component";
 import { MessagesComponent } from "./messages/messages.component";
 import { MessageListComponent } from "./messages/message-list.component";
 import { MessageInputComponent } from "./messages/message-input.component";
@@ -25,7 +26,8 @@ import { AuthService } from "./auth/auth.service";
     HeaderComponent,
     LogoutComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
