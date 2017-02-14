@@ -15,6 +15,7 @@ import { MessageListComponent } from "./messages/message-list.component";
 import { MessageInputComponent } from "./messages/message-input.component";
 import { routing } from './app.routing';
 import { AuthService } from "./auth/auth.service";
+import { ErrorService } from "./errors/error.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import { AuthService } from "./auth/auth.service";
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, ErrorService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
